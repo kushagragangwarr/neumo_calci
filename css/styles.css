@@ -11,7 +11,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background-image: linear-gradient(120deg, rgb(185, 86, 86), rgb(75, 8, 68))
+    background-image: linear-gradient(120deg, rgb(185, 86, 86), rgb(75, 8, 68));
 }
 
 button {
@@ -38,7 +38,7 @@ button:hover {
     padding: 2rem;
     height: 39rem;
     width: 29rem;
-    margin: auto;
+    /* margin-bottom: 5rem; */
     background-image: linear-gradient(110deg, rgb(17, 16, 16), rgb(56, 52, 52));
     border: none;
     border-radius: 2rem;
@@ -91,6 +91,8 @@ button:hover {
 /* footer starts */
 
 footer {
+    position: absolute;
+    bottom: 0;
     border-top: 2px solid red;
     padding: 1rem;
 }
