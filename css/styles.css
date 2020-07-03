@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(120deg, rgb(185, 86, 86), rgb(75, 8, 68))
+}
+
+button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 60%;
+    background-color: rgba(255, 255, 255, 0.89);
+    box-shadow: 3px 3px 9px rgb(31, 29, 29), -1px -1px 7px white;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: none;
+    background-image: linear-gradient(110deg, rgba(0, 0, 0, 0.781), rgba(53, 6, 6, 0.349));
+    color: white;
+}
+
+
+/* calci starts */
+
+#calci-container {
+    padding: 2rem;
+    height: 39rem;
+    width: 29rem;
+    margin: auto;
+    background-image: linear-gradient(110deg, rgb(17, 16, 16), rgb(56, 52, 52));
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 12px rgba(7, 7, 7, 0.548), -3px -3px 12px rgba(167, 162, 162, 0.315);
+}
+
+#screen {
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.89);
+    box-shadow: 3px 3px 10px rgba(165, 151, 151, 0.651), -3px -3px 12px rgba(206, 194, 194, 0.521);
+    border: none;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+#keys {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 2.5rem;
+    row-gap: 2rem;
+}
+
+#button-c {
+    width: 4.4rem;
+    grid-column: 1/4;
+    transition: background-image 0.5s, box-shadow 0.5s;
+}
+
+#button-equals {
+    border-radius: 2rem;
+    grid-column: 3/5;
+    transition: background-image 0.5s, box-shadow 0.5s;
+}
+
+#button-c:hover,
+#button-equals:hover {
+    box-shadow: none;
+    background-image: linear-gradient(110deg, rgba(51, 4, 4, 0.788), rgba(93, 4, 4, 0.924));
+    color: white;
+}
+
+
+/* calci ends */
+
+
+/* footer starts */
+
+footer {
+    border-top: 2px solid red;
+    padding: 1rem;
+}
+
+#footer-para {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    bottom: 0;
+}
+
+
+/* footer ends */
