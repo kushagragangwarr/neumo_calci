@@ -145,10 +145,10 @@ footer {
     }
     #keys {
         column-gap: 1.4rem;
-        row-gap: 1.3rem;
+        row-gap: 1rem;
     }
     #button-c {
-        width: 3.8rem;
+        width: 4rem;
     }
 }
 
