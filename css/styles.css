@@ -89,7 +89,7 @@ button:focus {
 #keys {
     display: grid;
     color: white;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto) 4.2rem auto;
     column-gap: 2rem;
     row-gap: 2rem;
 }
