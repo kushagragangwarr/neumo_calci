@@ -12,7 +12,7 @@ body {
     text-align: center;
     background-image: linear-gradient(120deg, rgb(185, 86, 86), rgb(75, 8, 68));
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: 100% 100vh;
 }
 
 button {
@@ -46,6 +46,16 @@ button:focus {
     cursor: pointer;
 }
 
+.button-bulb-click-black {
+    background-image: linear-gradient(110deg, rgb(17, 16, 16), rgb(56, 52, 52));
+    box-shadow: 3px 3px 12px rgba(7, 7, 7, 0.548), -3px -3px 12px rgba(7, 7, 7, 0.548);
+}
+
+.button-bulb-click-white {
+    background-image: linear-gradient(115deg, #E0E5EC, #E0E5EC);
+    box-shadow: 3px 3px 12px rgba(7, 7, 7, 0.548), -3px -3px 8px rgba(255, 255, 255, 0.5);
+}
+
 
 /* bulb button ends */
 
@@ -64,16 +74,6 @@ button:focus {
 
 /* TO SEE */
 
-.button-bulb-click-black {
-    background-image: linear-gradient(110deg, rgb(17, 16, 16), rgb(56, 52, 52));
-    box-shadow: 3px 3px 12px rgba(7, 7, 7, 0.548), -3px -3px 12px rgba(7, 7, 7, 0.548);
-}
-
-.button-bulb-click-white {
-    background-image: linear-gradient(115deg, #E0E5EC, #E0E5EC);
-    box-shadow: 3px 3px 12px rgba(7, 7, 7, 0.548), -3px -3px 8px rgba(255, 255, 255, 0.5);
-}
-
 #screen {
     color: black;
     font-size: 1.4rem;
@@ -90,7 +90,7 @@ button:focus {
     display: grid;
     color: white;
     grid-template-columns: repeat(4, auto);
-    column-gap: 2.2rem;
+    column-gap: 2rem;
     row-gap: 2rem;
 }
 
@@ -134,3 +134,23 @@ footer {
 
 
 /* footer ends */
+
+
+/* media queries starts */
+
+@media (max-width: 600px) {
+    #calci-container {
+        height: 35rem;
+        width: 24rem;
+    }
+    #keys {
+        column-gap: 1.4rem;
+        row-gap: 1.3rem;
+    }
+    #button-c {
+        width: 3.8rem;
+    }
+}
+
+
+/* media queries ends */
