@@ -10,9 +10,16 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(120deg, rgb(185, 86, 86), rgb(75, 8, 68));
     background-repeat: no-repeat;
     background-size: 100% 100vh;
+}
+
+.body-bg-dark {
+    background-image: linear-gradient(120deg, rgb(185, 86, 86), rgb(75, 8, 68));
+}
+
+.body-bg-white {
+    background-image: linear-gradient(120deg, rgb(200, 199, 235), rgb(115, 106, 106));
 }
 
 button {
@@ -99,13 +106,13 @@ button:focus {
 #button-c {
     width: 4.4rem;
     grid-column: 1/3;
-    transition: background-image 0.5s, box-shadow 0.5s;
+    transition: all 0.7s;
 }
 
 #button-equals {
     border-radius: 2rem;
     grid-column: 3/5;
-    transition: background-image 0.5s, box-shadow 0.5s;
+    transition: all 0.7s;
 }
 
 #button-c:hover,
@@ -130,7 +137,7 @@ footer {
 
 #footer-para {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
+    color: white;
     bottom: 0;
 }
 
